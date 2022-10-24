@@ -38,6 +38,9 @@ function hacerTransferencia(saldoaire) {
     } else if (saldoaire <= 1500) {
         alert("TRANSFERENCIA DEMASIADO BAJA // NO REALIZABLE")
     } else {
+        for(let i=1; i<=100; i+=1){
+            console.log(i + "%")
+        }
         saldo =saldo - saldoaire;
         saldoPersona1 = saldoaire;
         saldoaire = 0;
@@ -94,6 +97,8 @@ function validarUsuario(usuario) {
         seleccionarOpcion()
     } else {
         alert("usuario incorrecto o inexistente")
+        let usuario = prompt("Ingrese su usuario Bancario (Solo una palabra/ sin espacios ni comas)")
+        validarUsuario(usuario)
     }
 }
 
